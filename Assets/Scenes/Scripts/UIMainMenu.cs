@@ -50,9 +50,7 @@ namespace UIMainMenu
                 mainPanel.SetActive(true);
             }
         }
-
-
-      }
+    }
 
 
     private void OnDestroy()
@@ -61,6 +59,10 @@ namespace UIMainMenu
         settingsButton.onClick.RemoveListener(OnsettingsButtonClicked);
         sliderSpeedPlayer1.onValueChanged.RemoveAllListeners();
         sliderSpeedPlayer2.onValueChanged.RemoveAllListeners();
+        creditsButton.onClick.RemoveListener(OncreditsButtonClicked);
+        settingsbackButton.onClick.RemoveListener(OnsettingsbackButtonClicked);
+        creditsbackButton.onClick.RemoveListener(OncreditsbackButtonClicked);
+        exitButton.onClick.RemoveListener(OnexitButtonClicked);
     }
 
 
@@ -73,7 +75,6 @@ namespace UIMainMenu
     {
         mainPanel.SetActive(false);
         settingsPanel.SetActive(true);
-
     }
     private void OncreditsButtonClicked()
     {
@@ -81,15 +82,18 @@ namespace UIMainMenu
             {
                 mainPanel.SetActive(false);
                 creditsPanel.SetActive(true);
-
             }
-            else if (creditsPanel.activeSelf)
-                    creditsPanel.SetActive(true);
+            else if (creditsPanel.activeSelf) 
+            {
+                creditsPanel.SetActive(true);
+            }
+                   
     }
     private void OnsettingsbackButtonClicked()
     {
         settingsPanel.SetActive(false);
         mainPanel.SetActive(true);
+
     }
 
     private void OncreditsbackButtonClicked()
@@ -107,15 +111,15 @@ namespace UIMainMenu
     }
 
     private void OnSpeedPlayer1Changed(float speed)    
-    { 
+        { 
         
-
     }
     private void OnSpeedPlayer2Changed(float speed)
     {
 
-
     }
- }
+
+
+  }
 
 }
