@@ -8,7 +8,7 @@ public class CreditsPanel : MonoBehaviour
     [Header("Panels")]
     [SerializeField] public GameObject mainPanel;
     [SerializeField] public  GameObject creditsPanel;
-    [SerializeField] private GameObject settingsPanel;
+    
 
 
     [Header("Credits")]
@@ -31,14 +31,6 @@ public class CreditsPanel : MonoBehaviour
     {
         creditsbackButton.onClick.RemoveListener(OncreditsbackButtonClicked);
     
-    }
-
-
-
-    private void OnsettingsbackButtonClicked()
-    {
-        settingsPanel.SetActive(false);
-        mainPanel.SetActive(true);
     }
 
     private void OncreditsbackButtonClicked()

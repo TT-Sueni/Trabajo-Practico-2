@@ -7,8 +7,8 @@ public class Rotate : MonoBehaviour
     [Header("Rotation")]
 
     [SerializeField] private float rotation = 10.0f;
-    [SerializeField] private KeyCode keyrotright = KeyCode.E;
-    [SerializeField] private KeyCode keyrotleft = KeyCode.Q;
+    [SerializeField] private KeyCode keyrotright = KeyCode.D;
+    [SerializeField] private KeyCode keyrotleft = KeyCode.A;
 
     private Rigidbody2D rb2D;
 
@@ -26,11 +26,11 @@ public class Rotate : MonoBehaviour
     {
         if (Input.GetKeyDown(keyrotright))
         {
-            rb2D.AddTorque(rotation * Time.deltaTime,ForceMode2D.Impulse);
+            rb2D.AddTorque(rotation * Time.deltaTime,ForceMode2D.Force);
         }
         if (Input.GetKeyDown(keyrotleft))
         {
-            rb2D.AddTorque(-rotation * Time.deltaTime, ForceMode2D.Impulse);
+            rb2D.AddTorque(-rotation * Time.deltaTime, ForceMode2D.Force);
         }
     }
 }

@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class PanelMain : MonoBehaviour
 
 {
-  [Header("Panels")]
-    [SerializeField] public GameObject mainPanel;  
+    [Header("Panels")]
+    [SerializeField] public GameObject mainPanel;
     [SerializeField] private GameObject optionsPanel;
     [SerializeField] private GameObject creditsPanel;
     [SerializeField] private GameObject Scoreboard;
@@ -18,10 +18,10 @@ public class PanelMain : MonoBehaviour
     [SerializeField] private Button optionsButton;
     [SerializeField] private Button creditsButton;
     [SerializeField] private Button exitButton;
-    
 
-    
-    
+
+
+
 
     private void Awake()
     {
@@ -29,7 +29,8 @@ public class PanelMain : MonoBehaviour
         optionsButton.onClick.AddListener(OnOptionsButtonClicked);
         creditsButton.onClick.AddListener(OncreditsButtonClicked);
         exitButton.onClick.AddListener(OnexitButtonClicked);
-   
+        Time.timeScale = 0;
+
     }
 
     private void Update()
@@ -51,7 +52,7 @@ public class PanelMain : MonoBehaviour
     {
         playButton.onClick.RemoveListener(OnplayButtonClicked);
         optionsButton.onClick.RemoveListener(OnOptionsButtonClicked);
-       
+
     }
 
 
@@ -87,7 +88,7 @@ public class PanelMain : MonoBehaviour
     {
         Application.Quit();
 #if UNITY_EDITOR
- UnityEditor.EditorApplication.isPlaying = false;
+        UnityEditor.EditorApplication.isPlaying = false;
 #endif
 
     }
