@@ -105,7 +105,7 @@ public class Options : MonoBehaviour
 
     private void SetPlayerColor2()
     {
-        colorP1.color = UnityEngine.Color.blue;
+        colorP1.color = UnityEngine.Color.cyan;
         colorP2.color = UnityEngine.Color.gray;
 
     }
@@ -118,7 +118,7 @@ public class Options : MonoBehaviour
     private void SetPlayerColor4()
     {
         colorP1.color = UnityEngine.Color.gray;
-        colorP2.color = UnityEngine.Color.red;
+        colorP2.color = UnityEngine.Color.cyan;
     }
     private void SetPlayerColorDefault()
     {

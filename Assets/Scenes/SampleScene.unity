@@ -2335,7 +2335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.45490196}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3142,7 +3142,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dbb35d5673f942547bc3000b7cb0015a, type: 3}
-  m_Color: {r: 0.5698112, g: 0.4738876, b: 0.12793869, a: 1}
+  m_Color: {r: 0.6226415, g: 0.29525167, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7017,8 +7017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: 10000
-  keyrotright: 101
-  keyrotleft: 113
+  keyrotright: 97
+  keyrotleft: 100
 --- !u!114 &1886793978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7058,7 +7058,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 1
 --- !u!61 &1886793980
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7918,13 +7918,7 @@ MonoBehaviour:
   m_text: 'Desarrollador:
 
 
-    Tomas Tournon Carosio
-
-
-    Assets:
-
-
-    https://kenney.nl/assets/ui-pack'
+    Tomas Tournon Carosio'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
