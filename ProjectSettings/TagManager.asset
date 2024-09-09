@@ -12,11 +12,11 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Ball
+  - Scene
+  - Leftgoal
+  - Rightgoal
   - 
   - 
   - 

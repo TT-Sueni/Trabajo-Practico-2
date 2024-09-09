@@ -1,33 +1,44 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
-
-namespace UIMainMenu
-{
     public class UIMainMenu : MonoBehaviour
 
     {
-        [SerializeField] private Button playButton;
-        [SerializeField] private Button settingsButton;
-        [SerializeField] private Button creditsButton;
-        [SerializeField] private Button settingsbackButton;
-        [SerializeField] private Button creditsbackButton;
-        [SerializeField] private Button exitButton;
-        [SerializeField] private Slider sliderSpeedPlayer1;
-        [SerializeField] private Slider sliderSpeedPlayer2;
+        [Header("Panels")]
+
         [SerializeField] private GameObject mainPanel;
         [SerializeField] private GameObject settingsPanel;
         [SerializeField] private GameObject creditsPanel;
 
+        [Header("Main Menu")]
+
+        [SerializeField] private Button playButton;
+        [SerializeField] private Button settingsButton;
+        [SerializeField] private Button creditsButton;
+        [SerializeField] private Button exitButton;
+
+
+        [Header("Settings")]
+        [SerializeField] private Button settingsbackButton;
+        [SerializeField] private Slider sliderSpeedPlayer1;
+        [SerializeField] private Slider sliderSpeedPlayer2;
+
+        [Header("Credits")]
+        
+        [SerializeField] private Button creditsbackButton;
+
+        [Header("Players")]
+        
         [SerializeField] private GameObject player1;
         [SerializeField] private GameObject player2;
+ 
 
         
-        
-          
 
-      
+
+
+
+
 
     private void Awake()
     {
@@ -107,15 +118,17 @@ namespace UIMainMenu
     }
 
     private void OnSpeedPlayer1Changed(float speed)    
-    { 
+    {
         
+        ///player1Speedtext = speed.ToString();
 
     }
     private void OnSpeedPlayer2Changed(float speed)
     {
-
+        
 
     }
- }
+    
 
+    
 }
